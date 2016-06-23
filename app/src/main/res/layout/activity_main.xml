@@ -40,5 +40,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/elegirSensores"/>
-
+    <android.widget.EditText
+        android:id="@+id/textIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:hint="Introduzca la IP"/>
+    <Button
+        android:id="@+id/btnConectar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Conectar a un Sistema de Iluminacion!"
+        />
 </android.support.v7.widget.LinearLayoutCompat>

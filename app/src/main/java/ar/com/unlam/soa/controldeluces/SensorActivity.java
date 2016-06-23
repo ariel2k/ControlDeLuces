@@ -1,14 +1,15 @@
 package ar.com.unlam.soa.controldeluces;
 
-import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.loopj.android.http.AsyncHttpClient;
 
 import java.util.List;
 
@@ -49,6 +50,8 @@ public class SensorActivity extends AppCompatActivity implements SensorEventList
                 case Sensor.TYPE_ORIENTATION:
                     String cadena = "Ángulo: "+ ((int) event.values[0]);
                     lblValorSensor.setText(cadena);
+                    AsyncHttpClient cli = new AsyncHttpClient();
+                    String url = "http://" + IP.getInstance().getIp() + "/angulo/" + ((int) event.values[0]);
                     break;
             }
         }

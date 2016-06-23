@@ -10,8 +10,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.AsyncHttpResponseHandler;
 
 import java.util.List;
+
+import cz.msebera.android.httpclient.Header;
 
 public class SensorActivity extends AppCompatActivity implements SensorEventListener{
 
@@ -52,6 +55,17 @@ public class SensorActivity extends AppCompatActivity implements SensorEventList
                     lblValorSensor.setText(cadena);
                     AsyncHttpClient cli = new AsyncHttpClient();
                     String url = "http://" + IP.getInstance().getIp() + "/angulo/" + ((int) event.values[0]);
+                    cli.get(url, new AsyncHttpResponseHandler() {
+                        @Override
+                        public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+
+                        }
+
+                        @Override
+                        public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+
+                        }
+                    });
                     break;
             }
         }

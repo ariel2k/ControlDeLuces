@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppTheme"
+    android:background="@color/accent_material_dark">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor de X: "
+        android:id="@+id/txtX"
+        style="@style/Base.TextAppearance.AppCompat"
+        android:gravity="center"
+
+        android:background="@color/accent_material_light" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor de Y: "
+        android:layout_below="@+id/txtX"
+        android:id="@+id/txtY"
+        style="@style/Base.TextAppearance.AppCompat"
+        android:background="@color/accent_material_light"
+        android:backgroundTint="@color/accent_material_light"
+        android:gravity="center"
+
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor de Z: "
+        android:gravity="center"
+
+        android:layout_below="@+id/txtY"
+        android:id="@+id/txtZ"
+        style="@style/Base.TextAppearance.AppCompat"
+        android:background="@color/accent_material_light" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Max: "
+        android:layout_below="@+id/txtZ"
+        android:id="@+id/max"
+        />
+
+</RelativeLayout>

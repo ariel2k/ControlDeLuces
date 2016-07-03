@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/Ariel/jar/commons-net-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ariel/jar/jackson-core-2.2.2-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ariel/jar/javacsv.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ariel/jar/jersey-bundle-1.19.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ariel/jar/json-simple-1.1.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ariel/jar/w3c-dom.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

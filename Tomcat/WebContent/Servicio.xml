@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mi-ftp>
+	<archivoAngulo>C:/apache-tomcat-8.0.36/webapps/arduino/angulo.txt</archivoAngulo>
+	<archivoColor>C:/apache-tomcat-8.0.36/webapps/arduino/colores.txt</archivoColor>
+	<archivoDespertador>C:/apache-tomcat-8.0.36/webapps/arduino/despertador.txt</archivoDespertador>
+	<archivoEstado>C:/apache-tomcat-8.0.36/webapps/arduino/estado.txt</archivoEstado>
+</mi-ftp>
